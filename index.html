@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Red Button</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bigredbutton" onclick="this.innerHTML = parseInt(this.innerHTML, 10) + 1">0</div>
+    </div>
+    <style>
+        .wrapper {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .bigredbutton {
+            background-color: red;
+            width: 75vmin;
+            height: 75vmin;
+            border-radius: 50%;
+            box-shadow: 0 2vmin 1vmin rgb(82, 32, 32);
+            text-align: center;
+            cursor: default;
+            user-select: none;
+            color: white;
+            font-size: 16vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .bigredbutton:active {
+            transform: translateY(1vmin);
+            box-shadow: 0 0 0.5vmin rgb(82, 32, 32);
+        }
+    </style>
+</body>
+</html>
