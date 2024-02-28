@@ -7,7 +7,7 @@ from customtkinter import CTk, CTkButton
 
 
 def increment(counter: StringVar) -> None:
-    counter.set(int(counter.get()) + 1)
+    counter.set(str(int(counter.get()) + 1))
 
 
 def main() -> None:
